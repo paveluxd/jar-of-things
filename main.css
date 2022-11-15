@@ -1,0 +1,268 @@
+/* Reset http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+:root {
+    --green: #B5FF18;
+    --green2: #CAF372;
+    --pink: #F372BF;
+    --bg-grey: #F1F1F1;
+
+    --blue: #2E5CE5;
+    --yellow: #FFBC01;
+    --red: rgb(255, 53, 97);
+
+    --b54:rgba(0,0,0,0.54);
+    --b36:rgba(0,0,0,0.36);
+    --b17:rgba(0,0,0,0.17);
+    --b10:rgba(0,0,0,0.10);
+    --b5:rgba(0,0,0,0.05);
+    --b87:rgba(0,0,0,0.87);
+    --w70:rgba(255,255,255,0.70);
+    --w: rgba(255,255,255,1);
+}
+
+/* Layout */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* transition: all 200ms; */
+    /* height: 100%; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width:100%;
+    height: 100%;
+
+    font-family: 'Inter', sans-serif;
+    line-height: 148%;
+    font-size: 19px;
+    color: rgba(0,0,0);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Containers */
+.container {
+    /* background: rgba(255,0,0,0.3); */
+    width: 100%;
+    max-width: 1144px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 72px;
+    gap: 24px;
+}
+
+nav{
+    gap: 8px !important;
+    padding: 12px 0 0 0 !important;
+    position: fixed;
+}
+.logo-container{
+    background-color: var(--bg-grey);
+    border-radius: 12px;
+    padding: 0 12px 0 12px;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    width: min-content;
+}
+button{
+    background-color: var(--green2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 20px 0 12px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    height: 52px;
+}
+.btn{
+    cursor: pointer;
+    transition: all 100ms;
+}
+.btn:hover{
+    filter: hue-rotate(22deg);
+}
+.but:active{
+    filter: hue-rotate(40deg);
+}
+
+.row{
+    flex-direction: row;
+}
+
+.card-row{
+    display: flex;
+}
+.card{
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 12px;
+    flex-direction: column;
+    color: white;
+}
+.cover{
+    background-image: url(./img/skateboarding.png);
+    height: 240px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+
+.hero{
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding-top: 120px;
+}
+.hero img{
+    width: 366px;
+}
+.hero p{
+    max-width: 582px;
+}
+
+
+form{
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--bg-grey);
+    display: flex;
+    gap: 4px;
+    width:658px;
+}
+input{
+    font-size: 19px;
+    
+}
+input:nth-child(1){
+    border: 2px solid black;
+    border-radius: 8px;
+    padding-left: 12px;
+    /* max-width: 416px; */
+    width: 100%;
+}
+input:nth-child(2){
+    background-color: var(--pink);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+.full-background{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--green);
+    background-color: black;
+    padding-top: 72px;
+}
+.zigzag{
+    height: 24px;
+    width: 100%;
+    background-image: url(./img/zigzag.svg);
+}
+
+.features img{
+    width: 640px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.13);
+}
+
+.footer{
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Primitives */
+h1{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 100%;
+}
+
+h3{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 128%;
+}
+
+a{
+    color: var(--green);
+}
+
+/* Misc */
+
+
+
+/* Desktop  M */
+/* Uses max-width value from .container style*/
+
+/* Desktop S */
+@media only screen and (max-width: 1192px) {.container{max-width: 952px;}}
+
+/* Tablet portrait L */
+@media only screen and (max-width: 1000px) {.container{max-width: 760px;}}
+
+/* Tablet portrait M */
+@media only screen and (max-width: 808px) {.container{max-width: 568px;}}
+
+/* Tablet portrait S */
+@media only screen and (max-width: 616px) {.container{max-width: 424px;}}
+
+/* Mobile M */
+@media only screen and (max-width: 472px) {.container{max-width: 328px;}}
+
+/* Mobile S */
+@media only screen and (max-width: 376px) {.container{max-width: 272px;}}
