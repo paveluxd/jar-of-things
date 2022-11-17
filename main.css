@@ -61,7 +61,6 @@ blockquote:before, blockquote:after, q:before, q:after {
     /* transition: all 200ms; */
     /* height: 100%; */
 }
-
 body{
     display: flex;
     flex-direction: column;
@@ -80,6 +79,7 @@ body{
     text-rendering: optimizeLegibility;
 }
 
+
 /* Containers */
 .container {
     /* background: rgba(255,0,0,0.3); */
@@ -89,7 +89,9 @@ body{
     flex-direction: column;
     padding-bottom: 72px;
     gap: 24px;
+    /* border: 1px solid red; */
 }
+
 
 nav{
     gap: 8px !important;
@@ -128,20 +130,29 @@ button{
     filter: hue-rotate(40deg);
 }
 
+
 .row{
     flex-direction: row;
 }
 
+
 .card-row{
     display: flex;
+    gap: 24px;
 }
 .card{
     display: flex;
+    flex: 1 1 0px;
     gap: 16px;
-    padding: 24px;
+    
+    /* padding: 24px; */
     border-radius: 12px;
     flex-direction: column;
     color: white;
+}
+.card p {
+    font-size: 16px;
+    line-height: 22px;
 }
 .cover{
     background-image: url(./img/skateboarding.png);
@@ -151,12 +162,48 @@ button{
     /* background-attachment: fixed; */
     background-size: cover;
 }
+.zorbing{
+    background-image: url(./img/zorbing.jpeg); 
+}
+.sky{
+    background-image: url(./img/sky2.jpg); 
+}
+.dream{
+    background-image: url(./img/dream.jpeg); 
+}
+.pottery{
+    background-image: url(./img/pottery.jpeg); 
+    background-position: calc(100%) calc(100% - 0px); 
+}
+.horror{
+    background-image: url(./img/horror.jpeg); 
+    background-position: calc(100%) calc(0%); 
+}
+.vr{
+    background-image: url(./img/vr.jpeg); 
+    background-position: calc(100%) calc(0%); 
+}
+.tags{
+    font-size: 16px; 
+    display: flex;
+    gap: 4px;  
+}
+.tag{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 8px;
+    border-radius: 4px;
+
+    color: black;
+    background-color: var(--pink);
+}
 
 
 .hero{
     align-items: center;
     text-align: center;
-    gap: 24px;
+    gap: 72px;
     padding-top: 120px;
 }
 .hero img{
@@ -212,14 +259,27 @@ input:nth-child(2){
     background-image: url(./img/zigzag.svg);
 }
 
+
+.features{
+    align-items: center;
+    text-align: center;
+    gap: 0;
+}
 .features img{
     width: 640px;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.13);
 }
+.features p{
+    max-width: 340px;
+    margin: 0 auto;
+}
+
 
 .footer{
     align-items: center;
     text-align: center;
+    gap: 24px;
+    padding-bottom: 96px;
 }
 
 
@@ -243,7 +303,9 @@ a{
 }
 
 /* Misc */
-
+.m72{
+    margin-bottom: 72px;
+}
 
 
 /* Desktop  M */
@@ -256,10 +318,16 @@ a{
 @media only screen and (max-width: 1000px) {.container{max-width: 760px;}}
 
 /* Tablet portrait M */
-@media only screen and (max-width: 808px) {.container{max-width: 568px;}}
+@media only screen and (max-width: 808px) {
+    .container{max-width: 568px;}
+}
 
 /* Tablet portrait S */
-@media only screen and (max-width: 616px) {.container{max-width: 424px;}}
+@media only screen and (max-width: 616px) {
+    .container{
+        max-width: 424px;
+    }
+}
 
 /* Mobile M */
 @media only screen and (max-width: 472px) {.container{max-width: 328px;}}
