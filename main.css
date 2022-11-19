@@ -316,11 +316,28 @@ a{
 @media only screen and (max-width: 1192px) {.container{max-width: 952px;}}
 
 /* Tablet portrait L */
-@media only screen and (max-width: 1000px) {.container{max-width: 760px;}}
+@media only screen and (max-width: 1000px) {
+    .container{max-width: 760px;}
+
+        
+    .features{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .reverse-flex{
+        flex-direction: column-reverse;
+    }
+    .features img{
+        width: 100%;
+    }
+}
 
 /* Tablet portrait M */
 @media only screen and (max-width: 808px) {
     .container{max-width: 568px;}
+    form{
+        width: 100%;
+    }
 }
 
 /* Tablet portrait S */
@@ -328,10 +345,16 @@ a{
     .container{
         max-width: 424px;
     }
+
+    .card-row{
+        flex-direction: column;
+    }
 }
 
 /* Mobile M */
-@media only screen and (max-width: 472px) {.container{max-width: 328px;}}
+@media only screen and (max-width: 472px) {
+    .container{max-width: 328px;} 
+}
 
 /* Mobile S */
 @media only screen and (max-width: 376px) {.container{max-width: 272px;}}
