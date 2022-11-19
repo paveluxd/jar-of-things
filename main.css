@@ -226,14 +226,14 @@ input{
     font-size: 19px;
     
 }
-input:nth-child(1){
+.field{
     border: 2px solid black;
     border-radius: 8px;
     padding-left: 12px;
     /* max-width: 416px; */
     width: 100%;
 }
-input:nth-child(2){
+.form-btn{
     background-color: var(--pink);
     padding: 0 20px;
     display: flex;
