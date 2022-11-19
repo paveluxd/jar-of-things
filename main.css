@@ -313,7 +313,12 @@ a{
 /* Uses max-width value from .container style*/
 
 /* Desktop S */
-@media only screen and (max-width: 1192px) {.container{max-width: 952px;}}
+@media only screen and (max-width: 1192px) {
+    .container{max-width: 952px;}
+    .features{
+        gap: 24px;
+    }
+}
 
 /* Tablet portrait L */
 @media only screen and (max-width: 1000px) {
@@ -349,11 +354,45 @@ a{
     .card-row{
         flex-direction: column;
     }
+    .cta{
+        flex-direction: column;
+    }
+    form{
+        flex-direction: column;
+        max-width: calc(100% - 24px);
+        gap: 12px;
+        padding: 12px;
+        border-radius: 8px;
+    }
+    .field{
+        height: 52px;
+        width: calc(100% - 16px);
+    }
+
+    .br-1{
+        display: none;
+    }
+
+    .hero{
+        padding-top: 120px;
+    }
+    .hero img{
+        width: 100%;
+    }
 }
 
 /* Mobile M */
 @media only screen and (max-width: 472px) {
     .container{max-width: 328px;} 
+
+    h1{
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 136%;
+    }
 }
 
 /* Mobile S */
