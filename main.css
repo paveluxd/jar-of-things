@@ -139,13 +139,15 @@ button{
 .card-row{
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 .card{
+    min-width: 364px;
     display: flex;
     flex: 1 1 0px;
     gap: 16px;
     
-    /* padding: 24px; */
+    padding-bottom: 24px;
     border-radius: 12px;
     flex-direction: column;
     color: white;
@@ -282,6 +284,9 @@ input{
     gap: 24px;
     padding-bottom: 96px;
 }
+.footer img{
+    padding-top: 72px;
+}
 
 
 /* Primitives */
@@ -343,6 +348,9 @@ a{
     form{
         width: 100%;
     }
+    .br-2{
+        display: none;
+    }
 }
 
 /* Tablet portrait S */
@@ -351,9 +359,9 @@ a{
         max-width: 424px;
     }
 
-    .card-row{
+    /* .card-row{
         flex-direction: column;
-    }
+    } */
     .cta{
         flex-direction: column;
     }
@@ -379,6 +387,10 @@ a{
     .hero img{
         width: 100%;
     }
+
+    .card{
+        min-width: 100%;
+    }
 }
 
 /* Mobile M */
@@ -393,6 +405,7 @@ a{
         font-size: 16px;
         line-height: 136%;
     }
+
 }
 
 /* Mobile S */
