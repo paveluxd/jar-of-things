@@ -163,25 +163,25 @@ button{
     background-size: cover;
 }
 .zorbing{
-    background-image: url(./img/zorbing.jpeg); 
+    background-image: url(./img/zorbing.jpg); 
 }
 .sky{
     background-image: url(./img/sky2.jpg); 
 }
 .dream{
-    background-image: url(./img/dream.jpeg); 
+    background-image: url(./img/dream.jpg); 
 }
 .pottery{
-    background-image: url(./img/pottery.jpeg); 
-    background-position: calc(100%) calc(100% - 0px); 
+    background-image: url(./img/pottery.jpg); 
+    /* background-position: calc(100%) calc(100% - 0px);  */
 }
 .horror{
-    background-image: url(./img/horror.jpeg); 
-    background-position: calc(100%) calc(0%); 
+    background-image: url(./img/horror.jpg); 
+    /* background-position: calc(100%) calc(0%);  */
 }
 .vr{
-    background-image: url(./img/vr.jpeg); 
-    background-position: calc(100%) calc(0%); 
+    background-image: url(./img/vr.jpg); 
+    /* background-position: calc(100%) calc(0%);  */
 }
 .tags{
     font-size: 16px; 
